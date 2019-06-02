@@ -58,7 +58,7 @@ server {
 		# Mitigate https://httpoxy.org/ vulnerabilities
  		fastcgi_param HTTP_PROXY "";
 		fastcgi_intercept_errors on;
-		fastcgi_pass unix:/var/run/php/php7.0-fpm.sock; 
+		fastcgi_pass unix:/var/run/php/php7.2-fpm.sock; 
 		include fastcgi.conf;
     	}
 
