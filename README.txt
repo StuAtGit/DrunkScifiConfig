@@ -20,3 +20,8 @@
  Because I needed to update this line:
  fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
  In my wordpress sites-available (nginx conf) from 7.0 to 7.2 (updated in saved config, but may need updating next time around)
+ DB connection isssues.. had to login to mysql and explicitly flush privileges, and mess around for a bit trying to log in on command, FIK
+ After that, all good... Just had to set titles, edit first post, etc.
+ 
+ I also updated the do agent, because, reasons:
+ curl -sSL https://insights.nyc3.cdn.digitaloceanspaces.com/install.sh | sudo bash
